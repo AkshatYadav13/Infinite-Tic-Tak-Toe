@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tak Toe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="main">
+        <div id="left_container">
+            <h1 id="title">
+                <span>Tic</span>
+                <span>Tak</span>
+                <span>Toe</span>
+            </h1>
+            <div id="container">
+                <div id="straight_line" class="line"></div>
+                <div id="diagonal_line" class="line"></div>
+                <div class="box unused"></div>
+                <div class="box unused"></div>
+                <div class="box unused"></div>
+                <div class="box unused"></div>
+                <div class="box unused"></div>
+                <div class="box unused"></div>
+                <div class="box unused"></div>
+                <div class="box unused"></div>
+                <div class="box unused"></div>
+            </div>
+        </div>
+        <div id="right_container">
+            <fieldset id="modeBox" >
+                <legend>Select Mode</legend>  
+                <div>
+                    <input type="radio" id="infinite" name="fav_mode" value="infinite">
+                    <label for="infinite">Infinite</label><br>     
+                </div>
+                <div>
+                    <input type="radio" id="normal" name="fav_mode" value="normal" checked>
+                    <label for="normal">Normal</label><br>                
+                </div>
+                    
+             </fieldset>              
+
+            <p id="msgbox">Player X's turn</p>
+            <button id='resetbtn'class="btn">Reset Game</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
